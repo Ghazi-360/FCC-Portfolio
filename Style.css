@@ -1,0 +1,19 @@
+:root {
+    --main-white:  #e9d9d9;
+    --main-blue :  #4d4da8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    background-color: var(--main-white);
+    color: #4d4da8;
+}
+h1 {
+    color: var(--main-blue);
+}
