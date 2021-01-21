@@ -1,6 +1,6 @@
 :root {
-    --main-white:  #e9d9d9;
-    --main-blue :  #4d4da8;
+    --main-white: #f0f0f0;
+    --main-black: #1e1e22;  
 }
 
 * {
@@ -12,8 +12,51 @@
 body {
     font-family: poppins;
     background-color: var(--main-white);
-    color: #4d4da8;
+    color: var(--main-white);
 }
-h1 {
-    color: var(--main-blue);
+
+#Container {
+    width: 100%;
+    color: var(--main-black);
+}
+
+#navbar {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid var(--main-black);
+    
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    padding: 20px 50px 20px 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+
+@media only screen and (max-width: 425px) {
+    #navbar {
+        height: 60px;
+    } 
+
+    .nav-list {
+        justify-content: space-evenly;
+    }
+    .nav-list li {
+        padding: 20px 0 0 0;
+    }
+
+    #navbar a {
+        font-size: 16px;
+    }
 }
