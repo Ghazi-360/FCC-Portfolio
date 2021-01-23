@@ -91,6 +91,8 @@ body {
     text-align: center;
 }
 
-#Projects h2 {
+#projects h2 {
+    margin: 0 auto;
     padding-top: 50px;
+    text-decoration: underline;
 }
