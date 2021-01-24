@@ -96,3 +96,13 @@ body {
     padding-top: 50px;
     text-decoration: underline;
 }
+
+.project-box {
+    width: 400px;
+    height: 300px;
+    background-image: url("https://raw.githubusercontent.com/Ghazi-360/Images/main/screencapture-file-D-Projects-Javascript-BMR-Calculator-index-html-2021-01-24-14_27_28.png?token=AQ5AOL4WSXPW6OAHODEG7FLABU7CO");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+}
