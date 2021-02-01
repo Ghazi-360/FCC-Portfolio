@@ -96,3 +96,50 @@ body {
     padding-top: 50px;
     text-decoration: underline;
 }
+
+.card {
+    max-width: 200px;
+    height: 215px;
+    background: #ddd;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.imgBx {
+    max-width: 200px;
+    height: 215px;
+  background-image: url("https://raw.githubusercontent.com/Ghazi-360/Project-Images/main/Javascript%20BMR%20Calculator.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card:hover {
+    height: 250px;
+}
+
+.card .content {
+    position: relative;
+    margin-top: -162px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -5px;
+    transition-delay: 0.3s;
+}
+
+.content h2 {
+    color: black;
+    font-size: 24px;
+    font-family: poppins;
+}
