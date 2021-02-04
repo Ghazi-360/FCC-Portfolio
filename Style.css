@@ -1,6 +1,7 @@
 :root {
     --main-white: #f0f0f0;
     --main-black: #1e1e22;  
+    --main-blue: #2e2e63;
 }
 
 * {
@@ -17,13 +18,12 @@ body {
 
 #Container {
     width: 100%;
-    color: var(--main-black);
 }
 
 #navbar {
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid var(--main-black);
+    border-bottom: 2px solid var(--main-black);
     position: fixed;
     background-color: var(--main-white);
 }
@@ -38,7 +38,7 @@ body {
     padding: 20px 50px 20px 20px;
 }
 
-#navbar a {
+.nav-list a {
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
@@ -57,7 +57,7 @@ body {
         padding: 20px 0 0 0;
     }
 
-    #navbar a {
+    .nav-list a {
         font-size: 16px;
     }
 }
@@ -65,7 +65,7 @@ body {
 #welcome-section {
     width: 100%;
     height: 100vh;
-    background-color: #2e2e63;
+    background-color: var(--main-blue);
     padding-top: 80px;
     display: flex;
     justify-content: center;
@@ -75,7 +75,7 @@ body {
 }
 
 #welcome-section h1 {
-    font-size: 38px;
+    font-size: 42px;
     font-weight: 900;
 }
 
@@ -89,12 +89,12 @@ body {
     text-align: center;
     padding: 50px;
     text-decoration: underline;
+    color: var(--main-black);
 }
 
 #projects {
     width: 100%;
     height: 100vh;
-    background-color: rgb(94, 110, 60);
     text-align: center;
 
     display: flex;
@@ -175,7 +175,7 @@ body {
     margin-top: -122px;
     padding: 10px 15px;
     text-align: center;
-    color: #111;
+    color: var(--main-black);
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
@@ -189,7 +189,7 @@ body {
 }
 
 .project-tile {
-    color: black;
+    color: var(--main-black);
     font-size: 24px;
     font-family: poppins;
     text-align: center;
@@ -212,11 +212,11 @@ body {
 
 #contact {
     width: 100%;
-    height: 450px;
-    background-color: aquamarine;
+    height: 200px;
 }
 
 #contact h2 {
+    color: var(--main-black);
     text-align: center;
     font-size: 28px;
     padding: 10px;
@@ -226,7 +226,7 @@ body {
     width: 100%;
     height: auto;
     font-size: 32px;
-    background-color: blueviolet;
+    background-color: var(--main-blue);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -247,12 +247,13 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 32px;
-    background: salmon;
-    border-top: 4px solid red;
+    border-top: 4px solid var(--main-blue);
+    color: var(--main-black);
   }
   
   footer > p {
     margin: 32px;
+    font-size: 24px;
   }
   
   footer i {
