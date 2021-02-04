@@ -209,3 +209,64 @@ body {
         margin: 10px;
     }
 }
+
+#contact {
+    width: 100%;
+    height: 450px;
+    background-color: aquamarine;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.contact-list {
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.contact-list i {
+    padding-right: 10px;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px;
+    background: salmon;
+    border-top: 4px solid red;
+  }
+  
+  footer > p {
+    margin: 32px;
+  }
+  
+  footer i {
+    vertical-align: middle;
+  }
+
+  @media only screen and (max-width: 425px) {
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
